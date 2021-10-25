@@ -2,13 +2,10 @@ import { MongoMemoryServer } from 'mongodb-memory-server';
 import mongoose from 'mongoose';
 import request from 'supertest';
 import { app } from '../app';
-import { TextEncoder } from 'util';
 
 declare global {
   var signin: () => Promise<string[]>;
 }
-
-global.TextEncoder = TextEncoder;
 
 let mongo: any;
 
