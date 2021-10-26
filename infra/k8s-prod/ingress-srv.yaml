@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: 'true'
 spec:
   rules:
-    - host: imbe.nz
+    - host: www.imbe.nz
       http:
         paths:
           - path: /api/payments/?(.*)
